@@ -1,0 +1,16 @@
+.pokedex_bg {
+  width: auto;
+  height: 95vh;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pokeImg {
+  transform: scale(500%);
+  left: -50%;
+  top: 50%;
+}
