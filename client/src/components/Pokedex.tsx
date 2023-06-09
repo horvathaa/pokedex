@@ -39,7 +39,10 @@ const Pokedex = () => {
         <img className="pokedex_bg" src="/images/pokedex_bg.jpg"></img>
       </div>
       <SearchBar setName={updatePokeName}/>
-      <img className="pokeImg" src={pokeImage}></img>
+      <div className="pokeImg-container">
+        <img className="pokeImg" src={pokeImage}></img>
+        <h4 className="pokeName">{pokeName}</h4>
+      </div>
     </div>
   )
 }

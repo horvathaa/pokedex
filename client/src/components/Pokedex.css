@@ -11,6 +11,18 @@
 
 .pokeImg {
   transform: scale(500%);
+  max-width: 3vw;
   left: -50%;
   top: 50%;
+}
+
+.pokeImg-container {
+  position: absolute;
+  left: 51%;
+  top: 46%;
+  transform: translateX(-50%);
+}
+
+.pokeName {
+  margin-top: 10vh;
 }
