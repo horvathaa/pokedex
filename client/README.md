@@ -1,4 +1,6 @@
-# Getting Started
+# Pokemon Fetch Exercise
+
+### Getting Started
 
 To run the project, you must first install all the packages using
 
@@ -12,7 +14,14 @@ To launch your project you can use the following script
 
 ### Task
 
-Edit the src/components/Pokedex file to add a fetch request which lets you display the sprite of the given pokemon on the pokedex
+Edit the src/components/Pokedex file to add a fetch request which lets you display the sprite of the given pokemon on the pokedex.
+
+Checkout the documentation of the api here:
+https://pokeapi.co/docs/v2
+
+HINT
+
+> ! Checkout the /pokemon section
 
 ### Bonus Task
 
