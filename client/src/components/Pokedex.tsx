@@ -24,14 +24,10 @@ const Pokedex = () => {
           setPokeData(result)
         }
       )
-    fetch(`https://pokeapi.co/api/v2/pokemon-form/${pokeName}`)
-      .then(res => res.json())
-      .then(
-        (result) => {
-          console.log(result);
-          setPokeImage(result["sprites"]["front_default"]);
-        }
-      )
+    // Write your fetch statement here!
+    // It should fetch the link of the sprite for the given pokemon and store it inside the pokeImage state
+    // (u may use the above example as a reference)
+    //
   }, [pokeName, pokeImage])
   return (
     <div>
