@@ -6,7 +6,6 @@ import SearchBar from './SearchBar'
 
 
 const Pokedex = () => {
-  const [pokeData, setPokeData] = useState(null);
   const [pokeName, setPokeName] = useState<String>('piplup');
   const [pokeImage, setPokeImage] = useState<string>('');
 
@@ -16,17 +15,8 @@ const Pokedex = () => {
   }
 
   useEffect(() => {
-    fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokeName}`)
-      .then(res => res.json())
-      .then(
-        (result) => {
-          console.log(result["flavor_text_entries"][9]["flavor_text"]);
-          setPokeData(result)
-        }
-      )
     // Write your fetch statement here!
     // It should fetch the link of the sprite for the given pokemon and store it inside the pokeImage state
-    // (u may use the above example as a reference)
     //
   }, [pokeName, pokeImage])
   return (
