@@ -21,7 +21,7 @@ https://pokeapi.co/docs/v2
 
 HINT
 
-> ! Checkout the /pokemon section
+Checkout the /pokemon section
 
 ### Bonus Task
 
