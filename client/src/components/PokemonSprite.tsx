@@ -46,7 +46,7 @@ const PokemonSprite: React.FC<PokemonSpriteProps> = ({ pokemon }) => {
         }
     }
     return (
-        <div className={'flex'}>
+        <div className={cn('flex', 'justifyContentCenter', 'alignItemsStart')}>
             <img
                 className={cn({
                     'pokemon-sprite': true,

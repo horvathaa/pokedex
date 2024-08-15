@@ -17,6 +17,14 @@
     display: flex;
 }
 
+.alignItemsStart {
+    align-items: flex-start;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
 .goldenrod {
     color: #ffc40c;
 }
