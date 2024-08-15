@@ -19,13 +19,12 @@ const PokemonSprite: React.FC<PokemonSpriteProps> = ({ pokemon }) => {
         pokemon.sprites?.back_default && pokemon.sprites?.back_shiny
     )
     const [shiny, setShiny] = React.useState<boolean>(false)
-
     React.useEffect(() => {
         setHasBackSprite(
             pokemon.sprites?.back_default && pokemon.sprites?.back_shiny
         )
     }, [pokemon])
-    // console.log('pokemon', pokemon)
+    console.log('pokemon', pokemon)
     function getSprite() {
         if (hasBackSprite) {
             if (shiny) {

@@ -10,9 +10,8 @@ interface PokemonProps {
 }
 
 const Pokemon: React.FC<PokemonProps> = ({ pokemon }) => {
-    const [pokemonDescription, setPokemonDescription] = React.useState<{
-        [k: string]: any
-    }>({})
+    const [pokemonDescription, setPokemonDescription] =
+        React.useState<string>('')
     React.useEffect(() => {
         const fetchData = async () => {
             const res = await fetch(
@@ -21,7 +20,13 @@ const Pokemon: React.FC<PokemonProps> = ({ pokemon }) => {
             // need to get data from separate json entry
             const data = await res.json()
             console.log('data in fetchData pokemon descrip', data, pokemon.id)
-            setPokemonDescription(data)
+            const descripIdx = data.flavor_text_entries.findLastIndex(
+                (e: any) => e.language.name === 'en'
+            )
+            console.log('descrip', descripIdx)
+            const descriptionToUse =
+                data.flavor_text_entries[descripIdx].flavor_text
+            setPokemonDescription(descriptionToUse)
         }
         fetchData()
     }, [pokemon])
@@ -34,10 +39,7 @@ const Pokemon: React.FC<PokemonProps> = ({ pokemon }) => {
                     : ''}
             </h1>
             <p className={'barlow-light'} style={{ textAlign: 'center' }}>
-                {pokemonDescription?.flavor_text_entries &&
-                pokemonDescription?.flavor_text_entries.length
-                    ? pokemonDescription.flavor_text_entries[0].flavor_text
-                    : ''}
+                {pokemonDescription}
             </p>
         </div>
     )
