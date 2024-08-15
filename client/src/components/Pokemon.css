@@ -1,0 +1,22 @@
+.pokemon-sprite {
+    /* cursor: pointer; */
+    transition: 100ms;
+    width: 20vw;
+    /* height: 10vh; */
+}
+
+.hasBackSprite {
+    cursor: pointer;
+}
+
+.pokemon-shiny {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.goldenrod {
+    color: #ffc40c;
+}

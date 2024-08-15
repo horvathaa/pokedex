@@ -1,28 +1,30 @@
 .pokedex_bg {
-  width: auto;
-  height: 95vh;
+    width: auto;
+    height: 95vh;
 }
 
 .container {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .pokeImg {
-  transform: scale(500%);
-  max-width: 3vw;
-  left: -50%;
-  top: 50%;
+    transform: scale(500%);
+    max-width: 3vw;
+    left: -50%;
+    top: 50%;
 }
 
 .pokeImg-container {
-  position: absolute;
-  left: 51%;
-  top: 46%;
-  transform: translateX(-50%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .pokeName {
-  margin-top: 10vh;
+    margin-top: 10vh;
 }

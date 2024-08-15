@@ -1,25 +1,30 @@
 @import url('https://fonts.cdnfonts.com/css/public-pixel');
 .searchContainer {
-  position: absolute;
-  left: 53%;
-  transform: translateX(-50%);
-  top: 4vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 
-.MuiInputBase-root {
-  background-color: #00ffff;
-  font-family: 'Public Pixel', sans-serif !important;
-  font-size: 1vh !important;
-}
+/* .MuiInputBase-root {
+    background-color: #00ffff;
+    font-family: 'Public Pixel', sans-serif !important;
+    font-size: 1vh !important;
+} */
 
 .searchIcon {
-  margin-left: 1vw;
-  margin-top: 0.6vh;
-  transform: scale(130%);
-  transition: 100ms;
+    margin-left: 1vw;
+    margin-top: 0.6vh;
+    transform: scale(130%);
+    transition: 100ms;
 }
 
 .searchIcon:hover {
-  transform: scale(180%);
-  transition: 100ms;
+    transform: scale(180%);
+    transition: 100ms;
+    mouse: pointer;
+}
+
+.blue {
+    color: '#137AC4';
 }
